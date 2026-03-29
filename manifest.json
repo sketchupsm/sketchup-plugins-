@@ -1,0 +1,68 @@
+{
+  "version": "1.0.0",
+  "tools": [
+    {
+      "id": "say_hello",
+      "name": "Hello",
+      "description": "弹出问候消息",
+      "category": "示例工具",
+      "plugin": "hello_world",
+      "command": "HelloWorld.say_hello",
+      "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='4' y='8' width='32' height='24' rx='4' fill='#4285f4'/><polygon points='4,32 16,40 16,32' fill='#4285f4'/><text x='20' y='24' text-anchor='middle' fill='#fff' font-size='14' font-weight='bold' font-family='Arial'>Hi</text></svg>"
+    },
+    {
+      "id": "add_3d_text",
+      "name": "3D文字",
+      "description": "添加 Hello SketchUp 3D文字",
+      "category": "示例工具",
+      "plugin": "hello_world",
+      "command": "HelloWorld.add_greeting_text",
+      "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='6' y='10' width='36' height='28' rx='3' fill='#e8f0fe' stroke='#4285f4' stroke-width='2'/><text x='24' y='22' text-anchor='middle' fill='#4285f4' font-size='11' font-weight='bold' font-family='Arial'>3D</text><text x='24' y='34' text-anchor='middle' fill='#5f6368' font-size='8' font-family='Arial'>TEXT</text></svg>"
+    },
+    {
+      "id": "draw_cube",
+      "name": "立方体",
+      "description": "绘制一个立方体",
+      "category": "基本形状",
+      "plugin": "draw_shapes",
+      "command": "DrawShapes.draw_cube_dialog",
+      "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M24 6 L40 16 L40 34 L24 44 L8 34 L8 16 Z' fill='#e8f0fe' stroke='#4285f4' stroke-width='2'/><path d='M24 6 L24 24 M24 24 L40 16 M24 24 L8 34' stroke='#4285f4' stroke-width='1.5' opacity='0.5'/><path d='M24 24 L24 44' stroke='#4285f4' stroke-width='1.5' opacity='0.5'/></svg>"
+    },
+    {
+      "id": "draw_cylinder",
+      "name": "圆柱体",
+      "description": "绘制一个圆柱体",
+      "category": "基本形状",
+      "plugin": "draw_shapes",
+      "command": "DrawShapes.draw_cylinder_dialog",
+      "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><ellipse cx='24' cy='14' rx='14' ry='6' fill='#e8f0fe' stroke='#4285f4' stroke-width='2'/><path d='M10 14 L10 36' stroke='#4285f4' stroke-width='2'/><path d='M38 14 L38 36' stroke='#4285f4' stroke-width='2'/><ellipse cx='24' cy='36' rx='14' ry='6' fill='#e8f0fe' stroke='#4285f4' stroke-width='2'/></svg>"
+    },
+    {
+      "id": "draw_sphere",
+      "name": "球体",
+      "description": "绘制一个球体",
+      "category": "基本形状",
+      "plugin": "draw_shapes",
+      "command": "DrawShapes.draw_sphere_dialog",
+      "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='24' cy='24' r='16' fill='#e8f0fe' stroke='#4285f4' stroke-width='2'/><ellipse cx='24' cy='24' rx='16' ry='6' stroke='#4285f4' stroke-width='1' opacity='0.4'/><ellipse cx='24' cy='24' rx='6' ry='16' stroke='#4285f4' stroke-width='1' opacity='0.4'/></svg>"
+    }
+  ],
+  "plugins": {
+    "hello_world": {
+      "version": "1.0.0",
+      "display_name": "Hello World 示例插件",
+      "files": [
+        "hello_world.rb",
+        "hello_world/main.rb"
+      ]
+    },
+    "draw_shapes": {
+      "version": "1.2.0",
+      "display_name": "绘制基本形状",
+      "files": [
+        "draw_shapes.rb",
+        "draw_shapes/main.rb"
+      ]
+    }
+  }
+}
