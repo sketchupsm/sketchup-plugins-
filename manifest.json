@@ -45,6 +45,69 @@
       "plugin": "draw_shapes",
       "command": "DrawShapes.draw_sphere_dialog",
       "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='24' cy='24' r='16' fill='#e8f0fe' stroke='#4285f4' stroke-width='2'/><ellipse cx='24' cy='24' rx='16' ry='6' stroke='#4285f4' stroke-width='1' opacity='0.4'/><ellipse cx='24' cy='24' rx='6' ry='16' stroke='#4285f4' stroke-width='1' opacity='0.4'/></svg>"
+    },
+    {
+      "id": "staircase_straight",
+      "name": "直跑楼梯",
+      "description": "生成直跑楼梯，可设置踏步数、宽度、踏面、踢面",
+      "category": "建筑构件",
+      "plugin": "staircase",
+      "command": "Staircase.straight_dialog",
+      "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M6 42 L6 34 L14 34 L14 26 L22 26 L22 18 L30 18 L30 10 L38 10 L38 2 L42 2 L42 42 Z' fill='#e8f0fe' stroke='#4285f4' stroke-width='2' stroke-linejoin='round'/></svg>"
+    },
+    {
+      "id": "staircase_spiral",
+      "name": "旋转楼梯",
+      "description": "生成旋转楼梯，可设置踏步数、半径、旋转角度",
+      "category": "建筑构件",
+      "plugin": "staircase",
+      "command": "Staircase.spiral_dialog",
+      "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M24 44 C10 44 4 34 4 24 C4 14 14 4 24 4' stroke='#4285f4' stroke-width='2.5' fill='none' stroke-linecap='round'/><path d='M24 4 C34 4 44 14 44 24' stroke='#4285f4' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-dasharray='4 3'/><circle cx='24' cy='24' r='4' fill='#4285f4'/><line x1='24' y1='8' x2='24' y2='2' stroke='#4285f4' stroke-width='2'/><line x1='24' y1='2' x2='28' y2='6' stroke='#4285f4' stroke-width='2'/></svg>"
+    },
+    {
+      "id": "color_rainbow",
+      "name": "随机彩虹",
+      "description": "给所有面随机上色",
+      "category": "颜色工具",
+      "plugin": "color_tools",
+      "command": "ColorTools.random_rainbow",
+      "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='4' y='6' width='10' height='36' rx='2' fill='#f44336'/><rect x='14' y='6' width='10' height='36' rx='0' fill='#ffeb3b'/><rect x='24' y='6' width='10' height='36' rx='0' fill='#4caf50'/><rect x='34' y='6' width='10' height='36' rx='2' fill='#2196f3'/></svg>"
+    },
+    {
+      "id": "color_gradient",
+      "name": "渐变色",
+      "description": "按高度给面上渐变色（红→蓝）",
+      "category": "颜色工具",
+      "plugin": "color_tools",
+      "command": "ColorTools.gradient_red_blue",
+      "icon": "<svg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='g1' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='#f44336'/><stop offset='100%' stop-color='#2196f3'/></linearGradient></defs><rect x='8' y='4' width='32' height='40' rx='4' fill='url(#g1)'/></svg>"
+    },
+    {
+      "id": "color_opacity",
+      "name": "透明度",
+      "description": "设置选中面的透明度",
+      "category": "颜色工具",
+      "plugin": "color_tools",
+      "command": "ColorTools.set_opacity",
+      "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='6' y='6' width='24' height='24' rx='3' fill='#4285f4'/><rect x='18' y='18' width='24' height='24' rx='3' fill='#4285f4' opacity='0.35'/></svg>"
+    },
+    {
+      "id": "array_linear",
+      "name": "线性阵列",
+      "description": "沿XYZ方向阵列复制组件",
+      "category": "阵列工具",
+      "plugin": "array_copy",
+      "command": "ArrayCopy.linear_array",
+      "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='2' y='18' width='12' height='12' rx='2' fill='#4285f4'/><rect x='18' y='18' width='12' height='12' rx='2' fill='#4285f4' opacity='0.6'/><rect x='34' y='18' width='12' height='12' rx='2' fill='#4285f4' opacity='0.3'/><path d='M14 24 L18 24 M30 24 L34 24' stroke='#4285f4' stroke-width='1.5' stroke-dasharray='2 1'/></svg>"
+    },
+    {
+      "id": "array_radial",
+      "name": "环形阵列",
+      "description": "绕轴心环形阵列复制组件",
+      "category": "阵列工具",
+      "plugin": "array_copy",
+      "command": "ArrayCopy.radial_array",
+      "icon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='24' cy='24' r='16' stroke='#4285f4' stroke-width='1' stroke-dasharray='3 2' opacity='0.4'/><rect x='20' y='4' width='8' height='8' rx='2' fill='#4285f4'/><rect x='38' y='20' width='8' height='8' rx='2' fill='#4285f4' opacity='0.7'/><rect x='20' y='36' width='8' height='8' rx='2' fill='#4285f4' opacity='0.5'/><rect x='2' y='20' width='8' height='8' rx='2' fill='#4285f4' opacity='0.3'/><circle cx='24' cy='24' r='2' fill='#4285f4'/></svg>"
     }
   ],
   "plugins": {
@@ -62,6 +125,30 @@
       "files": [
         "draw_shapes.rb",
         "draw_shapes/main.rb"
+      ]
+    },
+    "staircase": {
+      "version": "1.0.0",
+      "display_name": "楼梯生成器",
+      "files": [
+        "staircase.rb",
+        "staircase/main.rb"
+      ]
+    },
+    "color_tools": {
+      "version": "1.0.0",
+      "display_name": "颜色工具",
+      "files": [
+        "color_tools.rb",
+        "color_tools/main.rb"
+      ]
+    },
+    "array_copy": {
+      "version": "1.0.0",
+      "display_name": "阵列复制",
+      "files": [
+        "array_copy.rb",
+        "array_copy/main.rb"
       ]
     }
   }
